@@ -3,8 +3,9 @@
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -66,7 +67,7 @@ MonoBehaviour:
     TileSets:
     - {fileID: 11400000, guid: eba38cb505b2c274fb9bcfab93cb095c, type: 2}
     NodeType: 0
-    Position: 0.416122
+    Position: 0.414959
     Label: Mini-Boss
     Keys: []
     Locks: []
@@ -75,7 +76,7 @@ MonoBehaviour:
     TileSets:
     - {fileID: 11400000, guid: 5867a3b713c060e419b7ee3d128262bf, type: 2}
     NodeType: 0
-    Position: 0.96949893
+    Position: 0.8427254
     Label: Boss
     Keys:
     - ID: 2

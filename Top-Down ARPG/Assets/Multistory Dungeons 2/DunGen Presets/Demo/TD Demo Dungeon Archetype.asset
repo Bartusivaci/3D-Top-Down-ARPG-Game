@@ -3,8 +3,9 @@
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -16,9 +17,10 @@ MonoBehaviour:
   BranchCapTileSets: []
   BranchCapType: 1
   BranchingDepth:
-    Min: 2
+    Min: 1
     Max: 3
   BranchCount:
     Min: 2
     Max: 4
   StraightenChance: 0
+  Unique: 0

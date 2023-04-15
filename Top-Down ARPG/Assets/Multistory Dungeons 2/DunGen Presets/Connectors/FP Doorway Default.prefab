@@ -3,9 +3,10 @@
 --- !u!1 &173478
 GameObject:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
   m_Component:
   - component: {fileID: 435884}
   - component: {fileID: 11411052}
@@ -18,22 +19,25 @@ GameObject:
   m_IsActive: 1
 --- !u!4 &435884
 Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 173478}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 6, y: 0, z: 37}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &11411052
 MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 173478}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -41,33 +45,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DoorPrefabPriority: 0
-  DoorPrefabs:
-  - {fileID: 103836, guid: 0cc86250f8d74402a14dfeacdb0fb541, type: 2}
-  BlockerPrefabs:
-  - {fileID: 178182, guid: 5814b8bd4ea149879e4f1e640167c380, type: 2}
-  - {fileID: 173772, guid: f245da5022da487fbe7884003478ae20, type: 2}
-  - {fileID: 110290, guid: 3f23c45148924571858801285085f811, type: 2}
-  - {fileID: 180244, guid: 3663c90f97e6493aa27146967b1ad6ac, type: 2}
-  - {fileID: 165158, guid: 02431cfb817e45e2ac3837dae3699907, type: 2}
+  ConnectorPrefabWeights:
+  - GameObject: {fileID: 103836, guid: 0cc86250f8d74402a14dfeacdb0fb541, type: 3}
+    Weight: 1
+  BlockerPrefabWeights:
+  - GameObject: {fileID: 178182, guid: 5814b8bd4ea149879e4f1e640167c380, type: 3}
+    Weight: 1
+  - GameObject: {fileID: 173772, guid: f245da5022da487fbe7884003478ae20, type: 3}
+    Weight: 1
+  - GameObject: {fileID: 110290, guid: 3f23c45148924571858801285085f811, type: 3}
+    Weight: 1
+  - GameObject: {fileID: 180244, guid: 3663c90f97e6493aa27146967b1ad6ac, type: 3}
+    Weight: 1
+  - GameObject: {fileID: 165158, guid: 02431cfb817e45e2ac3837dae3699907, type: 3}
+    Weight: 1
   AvoidRotatingDoorPrefab: 0
   AvoidRotatingBlockerPrefab: 0
-  AddWhenInUse: []
-  AddWhenNotInUse: []
+  ConnectorSceneObjects: []
+  BlockerSceneObjects: []
   socketGroup_obsolete: 0
-  socket: {fileID: 114347490813842542, guid: 2e63e2d4d65f6a84eb752650ad8e7fe0, type: 2}
-  doorPrefab: {fileID: 0}
+  doorPrefabs_obsolete: []
+  blockerPrefabs_obsolete: []
+  socket: {fileID: -7923929139677089225, guid: a9febfb3757906b42a6c79efc5d9db70, type: 2}
+  doorPrefabInstance: {fileID: 0}
   doorComponent: {fileID: 0}
   tile: {fileID: 0}
   connectedDoorway: {fileID: 0}
   hideConditionalObjects: 0
---- !u!1001 &100100000
-Prefab:
-  m_ObjectHideFlags: 1
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications: []
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 173478}
-  m_IsPrefabParent: 1
+  fileVersion: 1

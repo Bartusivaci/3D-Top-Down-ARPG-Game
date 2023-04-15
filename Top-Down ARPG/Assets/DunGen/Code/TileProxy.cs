@@ -90,10 +90,10 @@ namespace DunGen
 			Prefab = prefab;
 			PrefabTile = prefab.GetComponent<Tile>();
 
-			if (PrefabTile == null)
-				PrefabTile = prefab.AddComponent<Tile>();
+            if (PrefabTile == null)
+                PrefabTile = prefab.AddComponent<Tile>();
 
-			Placement = new TilePlacementData();
+            Placement = new TilePlacementData();
 
 			// Add proxy doorways
 			Doorways = new ReadOnlyCollection<DoorwayProxy>(doorways);
