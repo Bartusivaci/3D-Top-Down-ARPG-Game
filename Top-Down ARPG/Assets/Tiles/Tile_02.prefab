@@ -136900,8 +136900,8 @@ MonoBehaviour:
   TileBoundsOverride:
     m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 0.5, y: 0.5, z: 0.5}
-  Entrance: {fileID: 0}
-  Exit: {fileID: 0}
+  Entrance: {fileID: 9008515198414409021}
+  Exit: {fileID: 653820873742889419}
   OverrideConnectionChance: 0
   ConnectionChance: 0
   AllDoorways: []
