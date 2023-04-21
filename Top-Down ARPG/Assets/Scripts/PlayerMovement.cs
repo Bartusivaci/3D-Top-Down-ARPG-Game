@@ -9,14 +9,15 @@ public class PlayerMovement : MonoBehaviour
 
     private NavMeshAgent navMeshAgent;
     private Animator anim;
-    public Camera cam;
+    private Camera cam;
+    private bool isAttacking = false;
 
 
     private void Start()
     {
         navMeshAgent = GetComponent<NavMeshAgent>();
         anim = GetComponentInChildren<Animator>();
-        //cam = Camera.main;
+        cam = Camera.main;
     }
 
     
@@ -46,5 +47,31 @@ public class PlayerMovement : MonoBehaviour
         }
 
         return Vector3.zero;
+    }
+
+    public void LookAtTheMousePosition()
+    {
+        Vector3 mousePosition = GetMousePositionInWorld();
+        Vector3 direction = (mousePosition - transform.position).normalized;
+        transform.rotation = Quaternion.LookRotation(direction);
+    }
+
+
+    public void StopAgent()
+    {
+        navMeshAgent.destination = transform.localPosition;
+        navMeshAgent.isStopped = true;
+        isAttacking = true;
+    }
+
+    public void StartAgent()
+    {
+        navMeshAgent.isStopped = false;
+        isAttacking = false;
+    }
+
+    public bool GetIsAttacking()
+    {
+        return isAttacking;
     }
 }
