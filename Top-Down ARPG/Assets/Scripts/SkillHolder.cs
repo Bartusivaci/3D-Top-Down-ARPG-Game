@@ -25,19 +25,19 @@ public class SkillHolder : MonoBehaviour
         {
 
 
-            if (Input.GetKeyDown(KeyCode.Q))
+            if (Input.GetKey(KeyCode.Q))
             {
                 skill1.Cast(gameObject);
             }
-            if (Input.GetKeyDown(KeyCode.W))
+            if (Input.GetKey(KeyCode.W))
             {
                 skill2.Cast(gameObject);
             }
-            if (Input.GetKeyDown(KeyCode.E))
+            if (Input.GetKey(KeyCode.E))
             {
                 skill3.Cast(gameObject);
             }
-            if (Input.GetKeyDown(KeyCode.R))
+            if (Input.GetKey(KeyCode.R))
             {
                 skill4.Cast(gameObject);
             }
